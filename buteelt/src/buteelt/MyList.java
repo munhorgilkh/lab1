@@ -18,7 +18,8 @@ public class MyList {
 		System.out.println(list1);
 		
 		List<String> list = new ArrayList<String>();
-		list.add("O");list.add("U");
+		list.add("O");
+		list.add("U");
 		
 		//appending list elements to letters
 		list1.addAll(list);
@@ -42,5 +43,9 @@ public class MyList {
 		System.out.println("letters = "+list1+", list = "+list);
 		list.add("U");
 		System.out.println("letters = "+list1+", list = "+list);
+		
+		list1.remove("I");
+        System.out.println("I from list1: " + list1);
+		
 	}
 }
