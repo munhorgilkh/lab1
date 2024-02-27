@@ -35,11 +35,7 @@ class Train
     @Override
     public String toString() 
     {
-        return "(" +
-                "Галт тэргийн дугаар='" + trainNumber + '\'' +
-                ", Зорчигчийн нэр='" + ownerName + '\'' +
-                ", Зорчих чиглэл='" + trainDirection + '\'' +
-                ')';
+        return "(" + "Галт тэргийн дугаар='" + trainNumber + '\'' +", Зорчигчийн нэр='" + ownerName + '\'' +", Зорчих чиглэл='" + trainDirection + '\'' +')';
     }
 
 }
@@ -111,10 +107,11 @@ public class Main
             {
                 case 1:
                     System.out.println("Зорчих чиглэлийн мэдээлэл оруулна уу (Зорчих чиглэл, Эзэмшигчийн нэр):");
-                    String regNumber = scanner.next();
+                    
+                    String trainDirection = scanner.next();
                     String ownerName = scanner.next();
-                    String trainDirection = "" + (parkingLot.getNumberOfParkedTrains() + 1);
-                    Train Train = new Train(regNumber, ownerName, trainDirection);
+                    String traNumber = "" + (parkingLot.getNumberOfParkedTrains() + 1);
+                    Train Train = new Train(traNumber, ownerName, trainDirection);
                     parkingLot.parkTrain(Train, trainDirection);
                     System.out.println( trainDirection+"");
                     break;
