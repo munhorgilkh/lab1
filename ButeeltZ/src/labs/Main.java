@@ -100,7 +100,7 @@ public class Main
             System.out.println("3. Нийт тасалбар харуулах");
             System.out.println("4. Тасалбар нэмэх");
             System.out.println("5. Дуусгах");
-            System.out.print("Сонголтоо оруулна уу ");
+            System.out.print("Сонголтоо оруулна уу ");//dddddd
             int choice = scanner.nextInt();
 
             switch (choice) 
