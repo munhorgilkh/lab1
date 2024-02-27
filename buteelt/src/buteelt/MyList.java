@@ -1,9 +1,7 @@
 package buteelt;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 public class MyList {
 
 	public static void main(String args[]) {
@@ -45,7 +43,7 @@ public class MyList {
 		System.out.println("letters = "+list1+", list = "+list);
 		
 		list1.remove("I");
-        System.out.println("I from list1: " + list1);
+        System.out.println("I remove from list1: " + list1);
 		
 	}
 }
